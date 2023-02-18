@@ -1,0 +1,41 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.9.5",
+    "heartbeatAt": "2023-02-18T22:52:11.973251",
+    "startedAt": "2023-02-18T22:52:06.969053",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "GCN_model.ipynb",
+    "root": "C:/Users/chivi/PycharmProjects/SecondaryStructurePredictionGNN",
+    "git": {
+        "remote": "https://github.com/Anya497/SecondaryStructurePredictionGNN",
+        "commit": "96e5ca11b84bbc068d0af3aaf6d82c209fe8c5cf"
+    },
+    "email": "chi.vinny0702@gmail.com",
+    "host": "LAPTOP-0SLB37BD",
+    "username": "chivi",
+    "executable": "c:\\users\\chivi\\pycharmprojects\\secondarystructurepredictiongnn\\venv\\scripts\\python.exe",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2995.0,
+        "min": 0.0,
+        "max": 2995.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2995.0,
+            "min": 0.0,
+            "max": 2995.0
+        }
+    ],
+    "disk": {
+        "total": 237.36034774780273,
+        "used": 215.41046142578125
+    },
+    "memory": {
+        "total": 7.784477233886719
+    }
+}
