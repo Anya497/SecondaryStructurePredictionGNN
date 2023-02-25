@@ -20,6 +20,7 @@ class RNADataset(Dataset):
         l = []
         for i in range(1091):
             l.append("data_" + str(i) + ".pt")
+
         return l
 
     def download(self):
@@ -68,8 +69,8 @@ class RNADataset(Dataset):
                     out_edges.append([i, i + 1])
                     out_edges.append([i + 1, i])
 
-                    edge_label_index[i][i + 1] = 1
-                    edge_label_index[i + 1][i] = 1
+                    # edge_label_index[i][i + 1] = 1
+                    # edge_label_index[i + 1][i] = 1
 
                 for j in range(i, size):
                     if in_im_arr[i][j] == 255:
@@ -94,7 +95,6 @@ class RNADataset(Dataset):
 
             if self.pre_transform is not None:
                 data = self.pre_transform(data)
-            print(data)
             torch.save(data, osp.join(self.processed_dir, f'data_{idx}.pt'))
             idx += 1
 
