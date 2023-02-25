@@ -1,0 +1,174 @@
+2023-02-19 18:19:07,442 INFO    StreamThr :3917688 [internal.py:wandb_internal():87] W&B internal server running at pid: 3917688, started at: 2023-02-19 18:19:07.442027
+2023-02-19 18:19:07,443 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status
+2023-02-19 18:19:07,444 INFO    WriterThread:3917688 [datastore.py:open_for_write():85] open: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/run-8fc04ti0.wandb
+2023-02-19 18:19:07,444 DEBUG   SenderThread:3917688 [sender.py:send():336] send: header
+2023-02-19 18:19:07,444 DEBUG   SenderThread:3917688 [sender.py:send():336] send: run
+2023-02-19 18:19:08,616 INFO    SenderThread:3917688 [dir_watcher.py:__init__():216] watching files in: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files
+2023-02-19 18:19:08,616 INFO    SenderThread:3917688 [sender.py:_start_run_threads():1067] run started: 8fc04ti0 with start time 1676819946.454682
+2023-02-19 18:19:08,616 DEBUG   SenderThread:3917688 [sender.py:send_request():363] send_request: summary_record
+2023-02-19 18:19:08,616 INFO    SenderThread:3917688 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-19 18:19:08,618 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: check_version
+2023-02-19 18:19:08,619 DEBUG   SenderThread:3917688 [sender.py:send_request():363] send_request: check_version
+2023-02-19 18:19:08,745 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: run_start
+2023-02-19 18:19:08,746 DEBUG   HandlerThread:3917688 [system_info.py:__init__():31] System info init
+2023-02-19 18:19:08,747 DEBUG   HandlerThread:3917688 [system_info.py:__init__():46] System info init done
+2023-02-19 18:19:08,747 INFO    HandlerThread:3917688 [system_monitor.py:start():151] Starting system monitor
+2023-02-19 18:19:08,747 INFO    SystemMonitor:3917688 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-19 18:19:08,747 INFO    HandlerThread:3917688 [system_monitor.py:probe():172] Collecting system info
+2023-02-19 18:19:08,747 INFO    SystemMonitor:3917688 [interfaces.py:start():168] Started cpu
+2023-02-19 18:19:08,748 INFO    SystemMonitor:3917688 [interfaces.py:start():168] Started disk
+2023-02-19 18:19:08,748 INFO    SystemMonitor:3917688 [interfaces.py:start():168] Started gpu
+2023-02-19 18:19:08,748 INFO    SystemMonitor:3917688 [interfaces.py:start():168] Started memory
+2023-02-19 18:19:08,749 INFO    SystemMonitor:3917688 [interfaces.py:start():168] Started network
+2023-02-19 18:19:08,771 DEBUG   HandlerThread:3917688 [system_info.py:probe():195] Probing system
+2023-02-19 18:19:08,773 DEBUG   HandlerThread:3917688 [system_info.py:_probe_git():180] Probing git
+2023-02-19 18:19:08,788 DEBUG   HandlerThread:3917688 [system_info.py:_probe_git():188] Probing git done
+2023-02-19 18:19:08,788 DEBUG   HandlerThread:3917688 [system_info.py:probe():241] Probing system done
+2023-02-19 18:19:08,788 DEBUG   HandlerThread:3917688 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-56-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-02-19T15:19:08.771701', 'startedAt': '2023-02-19T15:19:00.561742', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'GCN_model.ipynb', 'root': '/home/vdshk/SecondaryStructurePredictionGNN', 'git': {'remote': 'https://github.com/Anya497/SecondaryStructurePredictionGNN', 'commit': '49a2ef7741d77ff169fece6e2a5e3131b312541e'}, 'email': 'pogozhelskaya@gmail.com', 'host': 'UNIT-614', 'username': 'vdshk', 'executable': '/home/vdshk/SecondaryStructurePredictionGNN/venv/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 1716.162, 'min': 800.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 2244.542, 'min': 800.0, 'max': 3900.0}, {'current': 800.0, 'min': 800.0, 'max': 3900.0}, {'current': 800.0, 'min': 800.0, 'max': 3900.0}, {'current': 900.0, 'min': 800.0, 'max': 3900.0}], 'disk': {'total': 110.1884994506836, 'used': 33.36798858642578}, 'gpu': 'NVIDIA GeForce GTX 1070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1070', 'memory_total': 8589934592}], 'memory': {'total': 15.293502807617188}}
+2023-02-19 18:19:08,789 INFO    HandlerThread:3917688 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-19 18:19:08,789 INFO    HandlerThread:3917688 [system_monitor.py:probe():185] Publishing system info
+2023-02-19 18:19:08,789 DEBUG   HandlerThread:3917688 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-19 18:19:08,789 DEBUG   HandlerThread:3917688 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-19 18:19:08,790 INFO    HandlerThread:3917688 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-19 18:19:08,791 DEBUG   SenderThread:3917688 [sender.py:send():336] send: files
+2023-02-19 18:19:08,791 INFO    SenderThread:3917688 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-02-19 18:19:08,804 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-19 18:19:08,804 DEBUG   SenderThread:3917688 [sender.py:send_request():363] send_request: stop_status
+2023-02-19 18:19:09,157 DEBUG   SenderThread:3917688 [sender.py:send():336] send: telemetry
+2023-02-19 18:19:09,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/requirements.txt
+2023-02-19 18:19:09,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:09,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/wandb-summary.json
+2023-02-19 18:19:09,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/wandb-metadata.json
+2023-02-19 18:19:09,859 INFO    wandb-upload_0:3917688 [upload_job.py:push():138] Uploaded file /tmp/tmpsp0bgun8wandb/q45wxfuz-wandb-metadata.json
+2023-02-19 18:19:11,617 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:12,484 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status_report
+2023-02-19 18:19:13,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:15,227 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-19 18:19:15,229 DEBUG   SenderThread:3917688 [sender.py:send():336] send: history
+2023-02-19 18:19:15,230 DEBUG   SenderThread:3917688 [sender.py:send_request():363] send_request: summary_record
+2023-02-19 18:19:15,230 INFO    SenderThread:3917688 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-19 18:19:15,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:15,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/wandb-summary.json
+2023-02-19 18:19:16,618 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:17,501 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status_report
+2023-02-19 18:19:17,619 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:19,619 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:21,324 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-19 18:19:21,348 DEBUG   SenderThread:3917688 [sender.py:send():336] send: history
+2023-02-19 18:19:21,348 DEBUG   SenderThread:3917688 [sender.py:send_request():363] send_request: summary_record
+2023-02-19 18:19:21,348 INFO    SenderThread:3917688 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-19 18:19:21,620 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:21,620 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/wandb-summary.json
+2023-02-19 18:19:22,573 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status_report
+2023-02-19 18:19:22,620 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:23,620 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:23,803 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:25,621 INFO    Thread-121:3917688 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/files/output.log
+2023-02-19 18:19:27,577 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status_report
+2023-02-19 18:19:28,804 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:32,578 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status_report
+2023-02-19 18:19:33,805 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:37,584 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: status_report
+2023-02-19 18:19:37,825 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:19:37,826 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:19:38,806 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:39,183 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:19:39,184 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:19:41,739 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:19:41,740 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:19:41,741 INFO    SenderThread:3917688 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 242, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2023-02-19 18:19:43,807 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:45,995 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:19:45,996 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:19:48,808 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:53,809 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:19:56,622 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:19:56,623 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:19:58,810 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:03,811 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:08,749 DEBUG   SystemMonitor:3917688 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-19 18:20:08,812 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:13,814 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:14,465 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:20:14,465 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:20:18,815 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:23,816 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:28,817 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:33,818 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:38,819 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:43,820 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:48,821 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:53,822 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:20:54,607 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:20:54,608 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:20:58,823 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:03,824 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:08,825 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:13,826 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:18,827 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:23,828 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:28,829 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:33,830 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:38,831 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:43,832 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:46,836 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-19 18:21:51,837 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:21:56,838 DEBUG   HandlerThread:3917688 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-19 18:22:01,722 ERROR   SenderThread:3917688 [internal_api.py:execute():245] 409 response executing GraphQL.
+2023-02-19 18:22:01,723 ERROR   SenderThread:3917688 [internal_api.py:execute():246] {"errors":[{"message":"run chi-vinny0702/secondary_structure_prediction/8fc04ti0 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-19 18:22:01,839 INFO    WriterThread:3917688 [datastore.py:close():299] close: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/run-8fc04ti0.wandb
+2023-02-19 18:22:01,839 INFO    HandlerThread:3917688 [handler.py:finish():841] shutting down handler
+2023-02-19 18:22:02,610 ERROR   StreamThr :3917688 [internal.py:wandb_internal():175] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 1593, in upsert_run
+    response = self.gql(
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 214, in gql
+    ret = self._retry_gql(
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal_api.py", line 242, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 49, in run
+    self._run()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal_util.py", line 93, in _run
+    self._debounce()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/internal.py", line 335, in _debounce
+    self._sm.debounce()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 512, in debounce
+    self._maybe_update_config(always=final)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 489, in _maybe_update_config
+    self._debounce_config()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/internal/sender.py", line 518, in _debounce_config
+    self._api.upsert_run(
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/apis/normalize.py", line 28, in wrapper
+    raise CommError(err.response, err)
+wandb.errors.CommError: <Response [409]>

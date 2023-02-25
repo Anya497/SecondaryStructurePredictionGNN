@@ -1,0 +1,111 @@
+2023-02-19 18:19:00,565 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Configure stats pid to 3917657
+2023-02-19 18:19:00,565 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/.config/wandb/settings
+2023-02-19 18:19:00,565 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/SecondaryStructurePredictionGNN/wandb/settings
+2023-02-19 18:19:00,565 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-19 18:19:00,565 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-02-19 18:19:00,565 INFO    MainThread:3917657 [wandb_init.py:_log_setup():492] Logging user logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/logs/debug.log
+2023-02-19 18:19:00,566 INFO    MainThread:3917657 [wandb_init.py:_log_setup():493] Logging internal logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_181900-8fc04ti0/logs/debug-internal.log
+2023-02-19 18:19:00,566 INFO    MainThread:3917657 [wandb_init.py:init():532] calling init triggers
+2023-02-19 18:19:00,566 INFO    MainThread:3917657 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'GCN', 'epochs': 180, 'optimizer': 'Adam', 'hidden_channels': 128, 'out_channels': 128, 'loss': 'f1_loss', 'dropout': 0.2}
+2023-02-19 18:19:00,566 INFO    MainThread:3917657 [wandb_init.py:init():554] re-initializing run, found existing run on stack: o4apd82i
+2023-02-19 18:19:00,567 INFO    MainThread:3917657 [wandb_run.py:_finish():1854] finishing run chi-vinny0702/secondary_structure_prediction/o4apd82i
+2023-02-19 18:19:00,567 INFO    MainThread:3917657 [jupyter.py:save_history():449] not saving jupyter history
+2023-02-19 18:19:00,567 INFO    MainThread:3917657 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-02-19 18:19:00,567 INFO    MainThread:3917657 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-02-19 18:19:00,567 INFO    MainThread:3917657 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-02-19 18:19:00,568 INFO    MainThread:3917657 [wandb_run.py:_restore():2066] restore
+2023-02-19 18:19:00,568 INFO    MainThread:3917657 [wandb_run.py:_restore():2072] restore done
+2023-02-19 18:19:06,442 INFO    MainThread:3917657 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-02-19 18:19:06,443 INFO    MainThread:3917657 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-02-19 18:19:06,449 INFO    MainThread:3917657 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-02-19 18:19:06,452 INFO    MainThread:3917657 [wandb_init.py:init():588] starting backend
+2023-02-19 18:19:06,452 INFO    MainThread:3917657 [wandb_init.py:init():592] setting up manager
+2023-02-19 18:19:06,453 INFO    MainThread:3917657 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-19 18:19:06,454 INFO    MainThread:3917657 [wandb_init.py:init():599] backend started and connected
+2023-02-19 18:19:06,456 INFO    MainThread:3917657 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-02-19 18:19:06,457 INFO    MainThread:3917657 [wandb_init.py:init():687] updated telemetry
+2023-02-19 18:19:06,507 INFO    MainThread:3917657 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-02-19 18:19:08,618 INFO    MainThread:3917657 [wandb_run.py:_on_init():2134] communicating current version
+2023-02-19 18:19:08,741 INFO    MainThread:3917657 [wandb_run.py:_on_init():2143] got version response 
+2023-02-19 18:19:08,741 INFO    MainThread:3917657 [wandb_init.py:init():775] starting run threads in backend
+2023-02-19 18:19:08,804 INFO    MainThread:3917657 [wandb_run.py:_console_start():2114] atexit reg
+2023-02-19 18:19:08,804 INFO    MainThread:3917657 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-02-19 18:19:08,804 INFO    MainThread:3917657 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-02-19 18:19:08,804 INFO    MainThread:3917657 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-02-19 18:19:08,804 INFO    MainThread:3917657 [wandb_init.py:init():817] run started, returning control to user process
+2023-02-19 18:21:45,831 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Configure stats pid to 3917657
+2023-02-19 18:21:45,831 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/.config/wandb/settings
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/SecondaryStructurePredictionGNN/wandb/settings
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_init.py:_log_setup():492] Logging user logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_182145-1cw82oet/logs/debug.log
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_init.py:_log_setup():493] Logging internal logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_182145-1cw82oet/logs/debug-internal.log
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7f1d65fd5400>
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_init.py:init():532] calling init triggers
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'GCN', 'epochs': 180, 'optimizer': 'Adam', 'hidden_channels': 128, 'out_channels': 128, 'loss': 'f1_loss', 'dropout': 0.2}
+2023-02-19 18:21:45,832 INFO    MainThread:3917657 [wandb_init.py:init():554] re-initializing run, found existing run on stack: 8fc04ti0
+2023-02-19 18:21:45,833 INFO    MainThread:3917657 [wandb_run.py:_finish():1854] finishing run chi-vinny0702/secondary_structure_prediction/8fc04ti0
+2023-02-19 18:21:45,833 INFO    MainThread:3917657 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-02-19 18:21:45,834 INFO    MainThread:3917657 [wandb_run.py:_restore():2066] restore
+2023-02-19 18:21:45,834 INFO    MainThread:3917657 [wandb_run.py:_restore():2072] restore done
+2023-02-19 18:22:04,642 WARNING MsgRouterThr:3917657 [router.py:message_loop():77] message_loop has been closed
+2023-02-19 18:22:11,842 INFO    MainThread:3917657 [wandb_run.py:_restore():2066] restore
+2023-02-19 18:22:11,842 INFO    MainThread:3917657 [wandb_run.py:_restore():2072] restore done
+2023-02-19 18:22:11,857 ERROR   MainThread:3917657 [wandb_init.py:init():1160] error
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 2092, in _atexit_cleanup
+    self._on_finish()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 2326, in _on_finish
+    _ = exit_handle.wait(timeout=-1, on_progress=self._on_progress_exit)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 288, in wait
+    on_probe(probe_handle)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 2291, in _on_probe_exit
+    result = handle.wait(timeout=0)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/mailbox.py", line 271, in wait
+    raise MailboxError("transport failed")
+wandb.errors.MailboxError: transport failed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 567, in init
+    self._wl._global_run_stack[-1].finish()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 371, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 334, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1845, in finish
+    return self._finish(exit_code, quiet)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 1860, in _finish
+    self._atexit_cleanup(exit_code=exit_code)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_run.py", line 2103, in _atexit_cleanup
+    self._backend.cleanup()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/backend/backend.py", line 259, in cleanup
+    self.interface.join()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 639, in join
+    super().join()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/interface.py", line 742, in join
+    _ = self._communicate_shutdown()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 552, in _communicate_shutdown
+    _ = self._communicate(record)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/interface_shared.py", line 285, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/interface_sock.py", line 60, in _communicate_async
+    future = self._router.send_and_receive(rec, local=local)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/router.py", line 94, in send_and_receive
+    self._send_message(rec)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/interface/router_sock.py", line 36, in _send_message
+    self._sock_client.send_record_communicate(record)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 216, in send_record_communicate
+    self.send_server_request(server_req)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
