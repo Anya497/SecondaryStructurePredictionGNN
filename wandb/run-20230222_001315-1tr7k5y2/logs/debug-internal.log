@@ -1,0 +1,406 @@
+2023-02-22 00:13:23,595 INFO    StreamThr :3936443 [internal.py:wandb_internal():87] W&B internal server running at pid: 3936443, started at: 2023-02-22 00:13:23.594346
+2023-02-22 00:13:23,597 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status
+2023-02-22 00:13:23,599 INFO    WriterThread:3936443 [datastore.py:open_for_write():85] open: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/run-1tr7k5y2.wandb
+2023-02-22 00:13:23,600 DEBUG   SenderThread:3936443 [sender.py:send():336] send: header
+2023-02-22 00:13:23,600 DEBUG   SenderThread:3936443 [sender.py:send():336] send: run
+2023-02-22 00:13:24,058 INFO    SenderThread:3936443 [dir_watcher.py:__init__():216] watching files in: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files
+2023-02-22 00:13:24,058 INFO    SenderThread:3936443 [sender.py:_start_run_threads():1067] run started: 1tr7k5y2 with start time 1677014002.610033
+2023-02-22 00:13:24,058 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:13:24,058 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:13:24,061 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: check_version
+2023-02-22 00:13:24,061 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: check_version
+2023-02-22 00:13:24,213 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: run_start
+2023-02-22 00:13:24,214 DEBUG   HandlerThread:3936443 [system_info.py:__init__():31] System info init
+2023-02-22 00:13:24,215 DEBUG   HandlerThread:3936443 [system_info.py:__init__():46] System info init done
+2023-02-22 00:13:24,215 INFO    HandlerThread:3936443 [system_monitor.py:start():151] Starting system monitor
+2023-02-22 00:13:24,215 INFO    SystemMonitor:3936443 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-22 00:13:24,215 INFO    HandlerThread:3936443 [system_monitor.py:probe():172] Collecting system info
+2023-02-22 00:13:24,215 INFO    SystemMonitor:3936443 [interfaces.py:start():168] Started cpu
+2023-02-22 00:13:24,216 INFO    SystemMonitor:3936443 [interfaces.py:start():168] Started disk
+2023-02-22 00:13:24,216 INFO    SystemMonitor:3936443 [interfaces.py:start():168] Started gpu
+2023-02-22 00:13:24,216 INFO    SystemMonitor:3936443 [interfaces.py:start():168] Started memory
+2023-02-22 00:13:24,217 INFO    SystemMonitor:3936443 [interfaces.py:start():168] Started network
+2023-02-22 00:13:24,238 DEBUG   HandlerThread:3936443 [system_info.py:probe():195] Probing system
+2023-02-22 00:13:24,239 DEBUG   HandlerThread:3936443 [system_info.py:_probe_git():180] Probing git
+2023-02-22 00:13:24,257 DEBUG   HandlerThread:3936443 [system_info.py:_probe_git():188] Probing git done
+2023-02-22 00:13:24,257 DEBUG   HandlerThread:3936443 [system_info.py:probe():241] Probing system done
+2023-02-22 00:13:24,257 DEBUG   HandlerThread:3936443 [system_monitor.py:probe():181] {'os': 'Linux-5.15.0-56-generic-x86_64-with-glibc2.29', 'python': '3.8.10', 'heartbeatAt': '2023-02-21T21:13:24.238454', 'startedAt': '2023-02-21T21:13:15.498065', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': 'GatedGCN_model.ipynb', 'root': '/home/vdshk/SecondaryStructurePredictionGNN', 'git': {'remote': 'https://github.com/Anya497/SecondaryStructurePredictionGNN', 'commit': '869fc56a04fed5153e00354bea953c219c9b6497'}, 'email': 'pogozhelskaya@gmail.com', 'host': 'UNIT-614', 'username': 'vdshk', 'executable': '/home/vdshk/SecondaryStructurePredictionGNN/venv/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 4, 'cpu_freq': {'current': 1254.153, 'min': 800.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 1916.612, 'min': 800.0, 'max': 3900.0}, {'current': 1100.0, 'min': 800.0, 'max': 3900.0}, {'current': 900.0, 'min': 800.0, 'max': 3900.0}, {'current': 1100.0, 'min': 800.0, 'max': 3900.0}], 'disk': {'total': 110.1884994506836, 'used': 33.5276985168457}, 'gpu': 'NVIDIA GeForce GTX 1070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1070', 'memory_total': 8589934592}], 'memory': {'total': 15.293502807617188}}
+2023-02-22 00:13:24,257 INFO    HandlerThread:3936443 [system_monitor.py:probe():182] Finished collecting system info
+2023-02-22 00:13:24,257 INFO    HandlerThread:3936443 [system_monitor.py:probe():185] Publishing system info
+2023-02-22 00:13:24,257 DEBUG   HandlerThread:3936443 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-22 00:13:24,258 DEBUG   HandlerThread:3936443 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-22 00:13:24,258 INFO    HandlerThread:3936443 [system_monitor.py:probe():187] Finished publishing system info
+2023-02-22 00:13:24,259 DEBUG   SenderThread:3936443 [sender.py:send():336] send: files
+2023-02-22 00:13:24,259 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-02-22 00:13:24,271 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: stop_status
+2023-02-22 00:13:24,271 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: stop_status
+2023-02-22 00:13:24,502 DEBUG   SenderThread:3936443 [sender.py:send():336] send: telemetry
+2023-02-22 00:13:24,824 INFO    wandb-upload_0:3936443 [upload_job.py:push():138] Uploaded file /tmp/tmpz5b9n_g0wandb/ub7p8xmc-wandb-metadata.json
+2023-02-22 00:13:25,062 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-metadata.json
+2023-02-22 00:13:25,062 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/requirements.txt
+2023-02-22 00:13:25,063 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:13:29,503 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:13:34,504 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:13:39,271 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:13:39,505 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:13:44,272 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:13:44,506 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:13:49,273 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:13:49,507 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:13:54,274 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:13:54,513 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:13:55,072 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/config.yaml
+2023-02-22 00:13:59,275 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:13:59,736 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:04,276 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:04,737 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:06,077 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:08,077 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:09,276 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:09,816 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:10,078 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:10,615 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:10,616 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:10,616 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:10,617 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:11,078 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:12,078 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:13,079 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:14,079 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:14,277 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:14,893 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:15,445 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:15,445 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:15,445 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:15,446 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:16,079 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:16,080 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:17,080 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:18,080 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:19,278 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:19,933 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:20,081 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:20,272 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:20,272 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:20,272 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:20,273 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:21,081 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:22,081 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:23,081 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:24,082 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:24,217 DEBUG   SystemMonitor:3936443 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-02-22 00:14:24,218 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:14:24,278 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:25,026 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:25,065 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:25,065 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:25,066 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:25,066 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:25,082 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:26,082 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:27,083 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:28,083 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:29,279 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:29,877 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:29,878 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:29,878 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:29,878 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:30,082 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:30,083 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:30,084 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:31,084 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:32,084 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:33,084 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:34,085 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:34,279 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:34,710 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:34,711 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:34,711 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:34,711 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:35,085 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:35,132 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:36,085 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:37,085 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:38,086 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:39,280 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:39,572 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:39,572 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:39,573 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:39,574 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:40,086 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:40,087 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:40,200 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:41,087 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:42,087 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:44,087 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:44,281 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:44,436 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: partial_history
+2023-02-22 00:14:44,436 DEBUG   SenderThread:3936443 [sender.py:send():336] send: history
+2023-02-22 00:14:44,436 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: summary_record
+2023-02-22 00:14:44,437 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:14:45,088 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:14:45,255 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:46,088 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:47,088 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:48,089 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:49,282 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:50,090 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:14:51,175 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:54,220 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:14:54,283 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:14:56,221 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:14:59,283 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:01,222 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:04,285 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:06,223 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:09,286 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:11,224 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:14,287 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:16,225 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:19,288 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:21,226 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:24,221 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:15:24,289 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:27,222 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:29,290 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:32,223 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:34,291 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:37,224 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:39,292 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:42,225 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:44,293 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:47,226 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:49,294 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:52,227 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:54,222 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:15:54,295 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:15:58,224 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:15:59,296 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:03,225 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:04,297 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:08,226 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:09,298 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:13,227 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:14,299 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:18,228 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:19,300 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:23,229 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:24,223 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:16:24,301 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:29,225 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:29,302 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:34,226 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:34,303 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:39,227 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:39,304 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:44,228 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:44,304 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:49,229 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:49,306 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:54,224 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:16:54,307 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:16:55,225 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:16:59,308 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:00,227 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:04,309 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:05,228 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:09,310 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:10,229 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:14,311 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:15,230 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:19,312 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:20,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:24,225 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:17:24,313 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:26,226 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:29,314 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:31,227 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:34,315 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:36,228 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:39,316 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:41,229 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:44,317 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:46,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:49,318 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:51,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:54,226 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:17:54,319 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:17:57,228 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:17:59,320 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:02,229 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:04,321 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:07,230 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:09,322 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:12,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:14,323 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:17,232 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:19,324 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:22,233 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:24,227 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:18:24,325 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:28,229 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:29,326 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:33,230 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:34,327 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:38,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:39,328 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:43,232 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:44,329 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:48,233 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:49,331 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:53,234 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:54,229 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:18:54,331 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:18:59,230 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:18:59,333 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:04,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:04,334 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:09,232 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:09,335 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:14,233 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:14,336 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:19,234 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:19,337 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:24,229 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:19:24,338 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:25,230 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:29,339 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:30,231 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:34,340 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:35,232 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:39,341 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: keepalive
+2023-02-22 00:19:40,233 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:42,591 DEBUG   SenderThread:3936443 [sender.py:send():336] send: telemetry
+2023-02-22 00:19:42,591 DEBUG   SenderThread:3936443 [sender.py:send():336] send: exit
+2023-02-22 00:19:42,591 INFO    SenderThread:3936443 [sender.py:send_exit():559] handling exit code: 0
+2023-02-22 00:19:42,591 INFO    SenderThread:3936443 [sender.py:send_exit():561] handling runtime: 378
+2023-02-22 00:19:42,592 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:19:42,592 INFO    SenderThread:3936443 [sender.py:send_exit():567] send defer
+2023-02-22 00:19:42,592 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,592 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 0
+2023-02-22 00:19:42,592 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,592 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-02-22 00:19:42,592 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 1
+2023-02-22 00:19:42,592 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,592 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 1
+2023-02-22 00:19:42,592 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,592 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-02-22 00:19:42,592 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 2
+2023-02-22 00:19:42,593 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,593 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 2
+2023-02-22 00:19:42,593 INFO    HandlerThread:3936443 [system_monitor.py:finish():161] Stopping system monitor
+2023-02-22 00:19:42,593 DEBUG   SystemMonitor:3936443 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-02-22 00:19:42,593 DEBUG   SystemMonitor:3936443 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-02-22 00:19:42,594 INFO    HandlerThread:3936443 [interfaces.py:finish():175] Joined cpu
+2023-02-22 00:19:42,594 INFO    HandlerThread:3936443 [interfaces.py:finish():175] Joined disk
+2023-02-22 00:19:42,634 INFO    HandlerThread:3936443 [interfaces.py:finish():175] Joined gpu
+2023-02-22 00:19:42,634 INFO    HandlerThread:3936443 [interfaces.py:finish():175] Joined memory
+2023-02-22 00:19:42,634 INFO    HandlerThread:3936443 [interfaces.py:finish():175] Joined network
+2023-02-22 00:19:42,635 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,635 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-02-22 00:19:42,635 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 3
+2023-02-22 00:19:42,635 DEBUG   SenderThread:3936443 [sender.py:send():336] send: stats
+2023-02-22 00:19:42,635 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,635 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 3
+2023-02-22 00:19:42,636 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,636 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-02-22 00:19:42,636 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 4
+2023-02-22 00:19:42,636 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,636 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 4
+2023-02-22 00:19:42,636 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,636 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-02-22 00:19:42,636 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 5
+2023-02-22 00:19:42,636 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,636 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 5
+2023-02-22 00:19:42,637 DEBUG   SenderThread:3936443 [sender.py:send():336] send: summary
+2023-02-22 00:19:42,637 INFO    SenderThread:3936443 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-02-22 00:19:42,637 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,637 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-02-22 00:19:42,637 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 6
+2023-02-22 00:19:42,637 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,637 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 6
+2023-02-22 00:19:42,638 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,638 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-02-22 00:19:42,643 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: status_report
+2023-02-22 00:19:42,991 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 7
+2023-02-22 00:19:42,992 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:42,992 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 7
+2023-02-22 00:19:42,992 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:42,992 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-02-22 00:19:43,227 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/config.yaml
+2023-02-22 00:19:43,228 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:19:43,228 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:19:43,593 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-22 00:19:44,551 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 8
+2023-02-22 00:19:44,551 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: poll_exit
+2023-02-22 00:19:44,551 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:44,551 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 8
+2023-02-22 00:19:44,552 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:44,552 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-02-22 00:19:44,552 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 9
+2023-02-22 00:19:44,552 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:44,552 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 9
+2023-02-22 00:19:44,552 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:44,552 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-02-22 00:19:44,552 INFO    SenderThread:3936443 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-02-22 00:19:44,594 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-22 00:19:45,228 INFO    Thread-433:3936443 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:19:45,229 INFO    SenderThread:3936443 [dir_watcher.py:finish():392] scan: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files
+2023-02-22 00:19:45,229 INFO    SenderThread:3936443 [dir_watcher.py:finish():406] scan save: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/config.yaml config.yaml
+2023-02-22 00:19:45,229 INFO    SenderThread:3936443 [dir_watcher.py:finish():406] scan save: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log output.log
+2023-02-22 00:19:45,235 INFO    SenderThread:3936443 [dir_watcher.py:finish():406] scan save: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json wandb-summary.json
+2023-02-22 00:19:45,235 INFO    SenderThread:3936443 [dir_watcher.py:finish():406] scan save: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-metadata.json wandb-metadata.json
+2023-02-22 00:19:45,235 INFO    SenderThread:3936443 [dir_watcher.py:finish():406] scan save: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/requirements.txt requirements.txt
+2023-02-22 00:19:45,242 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 10
+2023-02-22 00:19:45,242 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: poll_exit
+2023-02-22 00:19:45,243 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:45,243 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 10
+2023-02-22 00:19:45,243 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:45,243 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-02-22 00:19:45,243 INFO    SenderThread:3936443 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-22 00:19:45,448 ERROR   wandb-upload_3:3936443 [internal_api.py:upload_file():2004] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/chi-vinny0702/secondary_structure_prediction/1tr7k5y2/requirements.txt?Expires=1677100785&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=xwT98lpZ4dfW4%2F%2BMQw8C4FUg2jqD4mXUYXpfSCqoZyCaB%2FckH9uwXyDoVBcRAeaHOkjKBRmn0HC%2FxTlcoXRzP9DFyMY5oAnBvv07JDHuf5Mfeg4O%2BN8Ds6fiSaUDuwcqukvJnjZ3%2Fd6gF5QWCT32UynWPWVxbK8HZTvizdoiNafRNNgvEn5Oe2jJuEAsCfZ8KhxVuQP2OtmEQG18fFLfPUdyXtakUsBFnuk7ehVwg7esg%2B9QhUiWRO6pljcfTtTOnsVe9%2F6Tjffyzq%2Bj9mTLvQ%2FAYUte%2BtePZUxsVQGhOfrQjCEbeRCU7FNMh2MO0kV8QbH3ueiCo1RUd8aCTS4%2BNQ%3D%3D: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+2023-02-22 00:19:45,448 ERROR   wandb-upload_3:3936443 [internal_api.py:upload_file():2006] upload_file request headers: {'User-Agent': 'python-requests/2.28.2', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2182'}
+2023-02-22 00:19:45,449 ERROR   wandb-upload_3:3936443 [internal_api.py:upload_file():2008] upload_file response body: 
+2023-02-22 00:19:45,595 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-22 00:19:45,595 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: poll_exit
+2023-02-22 00:19:45,788 INFO    wandb-upload_1:3936443 [upload_job.py:push():138] Uploaded file /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/output.log
+2023-02-22 00:19:45,789 INFO    wandb-upload_0:3936443 [upload_job.py:push():138] Uploaded file /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/config.yaml
+2023-02-22 00:19:45,790 INFO    wandb-upload_2:3936443 [upload_job.py:push():138] Uploaded file /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/wandb-summary.json
+2023-02-22 00:19:46,595 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-22 00:19:46,597 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: poll_exit
+2023-02-22 00:19:46,818 INFO    wandb-upload_3:3936443 [upload_job.py:push():138] Uploaded file /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/files/requirements.txt
+2023-02-22 00:19:47,019 INFO    Thread-432:3936443 [sender.py:transition_state():587] send defer: 11
+2023-02-22 00:19:47,020 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:47,020 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 11
+2023-02-22 00:19:47,020 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:47,020 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-02-22 00:19:47,021 INFO    SenderThread:3936443 [file_pusher.py:join():167] waiting for file pusher
+2023-02-22 00:19:47,021 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 12
+2023-02-22 00:19:47,021 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:47,021 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 12
+2023-02-22 00:19:47,022 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:47,022 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-02-22 00:19:47,536 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 13
+2023-02-22 00:19:47,537 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:47,537 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 13
+2023-02-22 00:19:47,538 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:47,538 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-02-22 00:19:47,538 INFO    SenderThread:3936443 [sender.py:transition_state():587] send defer: 14
+2023-02-22 00:19:47,538 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: defer
+2023-02-22 00:19:47,539 INFO    HandlerThread:3936443 [handler.py:handle_request_defer():170] handle defer: 14
+2023-02-22 00:19:47,539 DEBUG   SenderThread:3936443 [sender.py:send():336] send: final
+2023-02-22 00:19:47,539 DEBUG   SenderThread:3936443 [sender.py:send():336] send: footer
+2023-02-22 00:19:47,539 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: defer
+2023-02-22 00:19:47,539 INFO    SenderThread:3936443 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-02-22 00:19:47,540 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: poll_exit
+2023-02-22 00:19:47,541 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: poll_exit
+2023-02-22 00:19:47,542 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: server_info
+2023-02-22 00:19:47,542 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: get_summary
+2023-02-22 00:19:47,542 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: sampled_history
+2023-02-22 00:19:47,543 DEBUG   SenderThread:3936443 [sender.py:send_request():363] send_request: server_info
+2023-02-22 00:19:48,055 DEBUG   HandlerThread:3936443 [handler.py:handle_request():144] handle_request: shutdown
+2023-02-22 00:19:48,055 INFO    HandlerThread:3936443 [handler.py:finish():841] shutting down handler
+2023-02-22 00:19:48,543 INFO    WriterThread:3936443 [datastore.py:close():299] close: /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230222_001315-1tr7k5y2/run-1tr7k5y2.wandb
+2023-02-22 00:19:49,054 INFO    SenderThread:3936443 [sender.py:finish():1493] shutting down sender
+2023-02-22 00:19:49,054 INFO    SenderThread:3936443 [file_pusher.py:finish():162] shutting down file pusher
+2023-02-22 00:19:49,054 INFO    SenderThread:3936443 [file_pusher.py:join():167] waiting for file pusher

@@ -1,0 +1,64 @@
+{
+    "os": "Linux-5.15.0-56-generic-x86_64-with-glibc2.29",
+    "python": "3.8.10",
+    "heartbeatAt": "2023-02-21T07:46:38.773028",
+    "startedAt": "2023-02-21T07:46:37.907555",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "GatedGCN_model.ipynb",
+    "root": "/home/vdshk/SecondaryStructurePredictionGNN",
+    "git": {
+        "remote": "https://github.com/Anya497/SecondaryStructurePredictionGNN",
+        "commit": "f090f13df2022c02df736868bd414a961a2e390b"
+    },
+    "email": "pogozhelskaya@gmail.com",
+    "host": "UNIT-614",
+    "username": "vdshk",
+    "executable": "/home/vdshk/SecondaryStructurePredictionGNN/venv/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 1529.1219999999998,
+        "min": 800.0,
+        "max": 3900.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2300.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 2216.488,
+            "min": 800.0,
+            "max": 3900.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3900.0
+        }
+    ],
+    "disk": {
+        "total": 110.1884994506836,
+        "used": 33.5816535949707
+    },
+    "gpu": "NVIDIA GeForce GTX 1070",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1070",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 15.293502807617188
+    }
+}

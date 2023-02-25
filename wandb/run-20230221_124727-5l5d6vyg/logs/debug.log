@@ -1,0 +1,55 @@
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Configure stats pid to 3936407
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/.config/wandb/settings
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/SecondaryStructurePredictionGNN/wandb/settings
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_init.py:_log_setup():492] Logging user logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230221_124727-5l5d6vyg/logs/debug.log
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_init.py:_log_setup():493] Logging internal logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230221_124727-5l5d6vyg/logs/debug-internal.log
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_init.py:init():532] calling init triggers
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'GatedGCN', 'epochs': 180, 'optimizer': 'Adam', 'out_channels': 200, 'loss': 'f1_loss', 'train:val:test': '655:218:218'}
+2023-02-21 12:47:27,104 INFO    MainThread:3936407 [wandb_init.py:init():554] re-initializing run, found existing run on stack: mxe8b1x2
+2023-02-21 12:47:27,105 INFO    MainThread:3936407 [wandb_run.py:_finish():1854] finishing run chi-vinny0702/secondary_structure_prediction/mxe8b1x2
+2023-02-21 12:47:27,106 INFO    MainThread:3936407 [jupyter.py:save_history():449] not saving jupyter history
+2023-02-21 12:47:27,106 INFO    MainThread:3936407 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-02-21 12:47:27,106 INFO    MainThread:3936407 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-02-21 12:47:27,106 INFO    MainThread:3936407 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-02-21 12:47:27,106 INFO    MainThread:3936407 [wandb_run.py:_restore():2066] restore
+2023-02-21 12:47:27,106 INFO    MainThread:3936407 [wandb_run.py:_restore():2072] restore done
+2023-02-21 12:47:35,307 INFO    MainThread:3936407 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-02-21 12:47:35,308 INFO    MainThread:3936407 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-02-21 12:47:35,314 INFO    MainThread:3936407 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-02-21 12:47:35,319 INFO    MainThread:3936407 [wandb_init.py:init():588] starting backend
+2023-02-21 12:47:35,319 INFO    MainThread:3936407 [wandb_init.py:init():592] setting up manager
+2023-02-21 12:47:35,320 INFO    MainThread:3936407 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-21 12:47:35,321 INFO    MainThread:3936407 [wandb_init.py:init():599] backend started and connected
+2023-02-21 12:47:35,323 INFO    MainThread:3936407 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-02-21 12:47:35,324 INFO    MainThread:3936407 [wandb_init.py:init():687] updated telemetry
+2023-02-21 12:47:35,385 INFO    MainThread:3936407 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-02-21 12:47:36,759 INFO    MainThread:3936407 [wandb_run.py:_on_init():2134] communicating current version
+2023-02-21 12:47:36,909 INFO    MainThread:3936407 [wandb_run.py:_on_init():2143] got version response 
+2023-02-21 12:47:36,909 INFO    MainThread:3936407 [wandb_init.py:init():775] starting run threads in backend
+2023-02-21 12:47:36,977 INFO    MainThread:3936407 [wandb_run.py:_console_start():2114] atexit reg
+2023-02-21 12:47:36,977 INFO    MainThread:3936407 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-02-21 12:47:36,977 INFO    MainThread:3936407 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-02-21 12:47:36,977 INFO    MainThread:3936407 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-02-21 12:47:36,977 INFO    MainThread:3936407 [wandb_init.py:init():817] run started, returning control to user process
+2023-02-21 12:50:23,638 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Configure stats pid to 3936407
+2023-02-21 12:50:23,638 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/.config/wandb/settings
+2023-02-21 12:50:23,638 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/SecondaryStructurePredictionGNN/wandb/settings
+2023-02-21 12:50:23,638 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-21 12:50:23,638 INFO    MainThread:3936407 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-02-21 12:50:23,638 INFO    MainThread:3936407 [wandb_init.py:_log_setup():492] Logging user logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230221_125023-e2o45iil/logs/debug.log
+2023-02-21 12:50:23,639 INFO    MainThread:3936407 [wandb_init.py:_log_setup():493] Logging internal logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230221_125023-e2o45iil/logs/debug-internal.log
+2023-02-21 12:50:23,639 INFO    MainThread:3936407 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fcff94f5b80>
+2023-02-21 12:50:23,639 INFO    MainThread:3936407 [wandb_init.py:init():532] calling init triggers
+2023-02-21 12:50:23,639 INFO    MainThread:3936407 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'learning_rate': 5e-05, 'architecture': 'GatedGCN', 'epochs': 180, 'optimizer': 'Adam', 'out_channels': 200, 'loss': 'f1_loss', 'train:val:test': '655:218:218'}
+2023-02-21 12:50:23,639 INFO    MainThread:3936407 [wandb_init.py:init():554] re-initializing run, found existing run on stack: 5l5d6vyg
+2023-02-21 12:50:23,640 INFO    MainThread:3936407 [wandb_run.py:_finish():1854] finishing run chi-vinny0702/secondary_structure_prediction/5l5d6vyg
+2023-02-21 12:50:23,641 INFO    MainThread:3936407 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-02-21 12:50:23,641 INFO    MainThread:3936407 [wandb_run.py:_restore():2066] restore
+2023-02-21 12:50:23,641 INFO    MainThread:3936407 [wandb_run.py:_restore():2072] restore done
+2023-02-21 12:50:30,884 INFO    MainThread:3936407 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-02-21 12:50:30,885 INFO    MainThread:3936407 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-02-21 12:50:30,891 INFO    MainThread:3936407 [wandb_run.py:_footer_sync_info():3398] logging synced files

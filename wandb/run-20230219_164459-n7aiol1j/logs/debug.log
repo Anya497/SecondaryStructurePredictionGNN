@@ -1,0 +1,62 @@
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Configure stats pid to 3916623
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/.config/wandb/settings
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/SecondaryStructurePredictionGNN/wandb/settings
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_init.py:_log_setup():492] Logging user logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_164459-n7aiol1j/logs/debug.log
+2023-02-19 16:44:59,922 INFO    MainThread:3916623 [wandb_init.py:_log_setup():493] Logging internal logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_164459-n7aiol1j/logs/debug-internal.log
+2023-02-19 16:44:59,923 INFO    MainThread:3916623 [wandb_init.py:init():532] calling init triggers
+2023-02-19 16:44:59,923 INFO    MainThread:3916623 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'GCN', 'epochs': 180, 'optimizer': 'Adam', 'hidden_channels': 128, 'out_channels': 64, 'loss': 'f1_loss', 'dropout': 0.4}
+2023-02-19 16:44:59,923 INFO    MainThread:3916623 [wandb_init.py:init():588] starting backend
+2023-02-19 16:44:59,923 INFO    MainThread:3916623 [wandb_init.py:init():592] setting up manager
+2023-02-19 16:44:59,931 ERROR   MainThread:3916623 [wandb_init.py:init():1160] error
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 593, in init
+    manager._inform_init(settings=self.settings, run_id=self.settings.run_id)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 174, in _inform_init
+    svc_iface._svc_inform_init(settings=settings, run_id=run_id)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/service/service_sock.py", line 38, in _svc_inform_init
+    self._sock_client.send(inform_init=inform_init)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Configure stats pid to 3916623
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/.config/wandb/settings
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Loading settings from /home/vdshk/SecondaryStructurePredictionGNN/wandb/settings
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_init.py:_log_setup():492] Logging user logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_164615-vl8oczje/logs/debug.log
+2023-02-19 16:46:15,619 INFO    MainThread:3916623 [wandb_init.py:_log_setup():493] Logging internal logs to /home/vdshk/SecondaryStructurePredictionGNN/wandb/run-20230219_164615-vl8oczje/logs/debug-internal.log
+2023-02-19 16:46:15,620 INFO    MainThread:3916623 [wandb_init.py:init():532] calling init triggers
+2023-02-19 16:46:15,620 INFO    MainThread:3916623 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0.0001, 'architecture': 'GCN', 'epochs': 180, 'optimizer': 'Adam', 'hidden_channels': 128, 'out_channels': 64, 'loss': 'f1_loss', 'dropout': 0.4}
+2023-02-19 16:46:15,620 INFO    MainThread:3916623 [wandb_init.py:init():588] starting backend
+2023-02-19 16:46:15,620 INFO    MainThread:3916623 [wandb_init.py:init():592] setting up manager
+2023-02-19 16:46:15,627 ERROR   MainThread:3916623 [wandb_init.py:init():1160] error
+Traceback (most recent call last):
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 1133, in init
+    run = wi.init()
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_init.py", line 593, in init
+    manager._inform_init(settings=self.settings, run_id=self.settings.run_id)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/wandb_manager.py", line 174, in _inform_init
+    svc_iface._svc_inform_init(settings=settings, run_id=run_id)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/service/service_sock.py", line 38, in _svc_inform_init
+    self._sock_client.send(inform_init=inform_init)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 211, in send
+    self.send_server_request(server_req)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/home/vdshk/SecondaryStructurePredictionGNN/venv/lib/python3.8/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+BrokenPipeError: [Errno 32] Broken pipe

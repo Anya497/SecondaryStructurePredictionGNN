@@ -1,0 +1,45 @@
+
+
+100%|████████████████████████████████████████████████████████████| 655/655 [00:05<00:00, 122.16it/s]
+ 11%|██████▍                                                      | 23/218 [00:00<00:00, 220.75it/s]
+Epoch: 001, loss: 0.8881711622230879, f1: 0.11608835349051516, precision: 0.06162091184350598, recall: 1.0
+100%|████████████████████████████████████████████████████████████| 218/218 [00:00<00:00, 231.86it/s]
+
+100%|████████████████████████████████████████████████████████████| 655/655 [00:05<00:00, 128.66it/s]
+ 10%|█████▉                                                       | 21/218 [00:00<00:00, 209.56it/s]
+Epoch: 002, loss: 0.8874772697914648, f1: 0.11608835349051516, precision: 0.06162091184350598, recall: 1.0
+100%|████████████████████████████████████████████████████████████| 218/218 [00:00<00:00, 234.40it/s]
+
+100%|████████████████████████████████████████████████████████████| 655/655 [00:05<00:00, 127.13it/s]
+  0%|                                                                       | 0/218 [00:00<?, ?it/s]
+Epoch: 003, loss: 0.8874763729918094, f1: 0.11608835349051516, precision: 0.06162091184350598, recall: 1.0
+100%|████████████████████████████████████████████████████████████| 218/218 [00:00<00:00, 233.12it/s]
+
+ 32%|███████████████████▏                                        | 210/655 [00:01<00:03, 122.11it/s]
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
+wandb: ERROR Dropped streaming file chunk (see wandb/debug-internal.log)
