@@ -33,62 +33,73 @@ class RNADataset(Dataset):
         idx = 0
         for raw_path in self.raw_paths:
             # Read data from `raw_path`.
-            in_im_arr = imread(raw_path, as_gray=True)
-            out_im_arr = imread(raw_path.replace("in", "out"), as_gray=True)
-            size = len(in_im_arr)
+           
+            x = []
+            edge_index = [[], []]
+            pos_edge_index = [[], []]
+            neg_edge_index = [[], []]
+            
+            in_im = imread(raw_path, as_gray=True)
+            out_im = imread(raw_path.replace("in", "out"), as_gray=True)
+            size = len(in_im)
+            
+            adj_mat = torch.zeros([size, size])
 
-            nodes = []
-            edges = []
-
-            out_edges = []
-            edge_label_index = []
 
             for i in range(size):
-                l = []
                 for j in range(size):
-                    if out_im_arr[i][j] == 255:
-                        l.append(1)
-                    else:
-                        l.append(0)
-                edge_label_index.append(l)
-
+                    
+                    #adj_mat
+                    if out_im[i][j] == 255:
+                        adj_mat[i][j] = 1
+                        adj_mat[j][i] = 1
+                        
+                        pos_edge_index[0].append(i)
+                        pos_edge_index[1].append(j)  
+                        pos_edge_index[0].append(j)
+                        pos_edge_index[1].append(i) 
+            
+                        
+                    #edge_index
+                    if in_im[i][j] == 255:
+                        edge_index[0].append(i)
+                        edge_index[1].append(j)
+                        edge_index[0].append(j)
+                        edge_index[1].append(i)
+                        
+                    if (j == (i + 1)):
+                        edge_index[0].append(i)
+                        edge_index[1].append(j)  
+                        edge_index[0].append(j)
+                        edge_index[1].append(i)
+                    
+                    #neg_edge_index
+                    if (in_im[i][j] == 255) and (out_im[i][j] != 255):
+                        neg_edge_index[0].append(i)
+                        neg_edge_index[1].append(j)
+                        neg_edge_index[0].append(j)
+                        neg_edge_index[1].append(i)    
+                        
+            #x
             for i in range(size):
-                nucl_ind = in_im_arr[i][i]
+                nucl_ind = in_im[i][i]
                 if nucl_ind == 32:
-                    nodes.append([1, 0, 0, 0])
+                    x.append([1, 0, 0, 0])
                 elif nucl_ind == 64:
-                    nodes.append([0, 1, 0, 0])
+                    x.append([0, 1, 0, 0])
                 elif nucl_ind == 96:
-                    nodes.append([0, 0, 1, 0])
+                    x.append([0, 0, 1, 0])
                 elif nucl_ind == 128:
-                    nodes.append([0, 0, 0, 1])
-
-                if i != size - 1:
-                    edges.append([i, i + 1])
-                    edges.append([i + 1, i])
-                    out_edges.append([i, i + 1])
-                    out_edges.append([i + 1, i])
-
-                    # edge_label_index[i][i + 1] = 1
-                    # edge_label_index[i + 1][i] = 1
-
-                for j in range(i, size):
-                    if in_im_arr[i][j] == 255:
-                        edges.append([i, j])
-                        edges.append([j, i])
-                    if out_im_arr[i][j] == 255:
-                        out_edges.append([i, j])
-                        out_edges.append([j, i])
-
-                        edge_label_index[i][j] = 1
-                        edge_label_index[j][i] = 1
-
-            x = torch.tensor(nodes, dtype=torch.float32)
-            edge_index = torch.tensor(edges, dtype=torch.long)
-            edge_label_index = torch.tensor(edge_label_index, dtype=torch.long)
-            # out_edge_index = torch.tensor(out_edges, dtype=torch.long)
-
-            data = Data(x=x, edge_index=edge_index.t().contiguous(), edge_label_index=edge_label_index)
+                    x.append([0, 0, 0, 1])
+                    
+            x = torch.tensor(x, dtype=torch.float32)
+            edge_index = torch.tensor(edge_index, dtype=torch.long)
+            pos_edge_index = torch.tensor(pos_edge_index, dtype=torch.long)
+            neg_edge_index = torch.tensor(neg_edge_index, dtype=torch.long)
+            
+            
+            data = Data(x=x, edge_index=edge_index.contiguous(), adj_mat=adj_mat, 
+                        pos_edge_index=pos_edge_index, neg_edge_index=neg_edge_index)
 
             if self.pre_filter is not None and not self.pre_filter(data):
                 continue
@@ -104,3 +115,7 @@ class RNADataset(Dataset):
     def get(self, idx):
         data = torch.load(osp.join(self.processed_dir, f'data_{idx}.pt'))
         return data
+
+    
+dataset = dataset = RNADataset(root="./data/")
+
