@@ -36,6 +36,7 @@ class RNADataset(Dataset):
            
             x = []
             edge_index = [[], []]
+            edge_weight = []
             pos_edge_index = [[], []]
             neg_edge_index = [[], []]
             
@@ -64,14 +65,20 @@ class RNADataset(Dataset):
                     if in_im[i][j] == 255:
                         edge_index[0].append(i)
                         edge_index[1].append(j)
+                        edge_weight.append([1, 0])
+                        
                         edge_index[0].append(j)
                         edge_index[1].append(i)
+#                         edge_weight.append([1, 0])
                         
                     if (j == (i + 1)):
                         edge_index[0].append(i)
-                        edge_index[1].append(j)  
+                        edge_index[1].append(j) 
+                        edge_weight.append([0, 1])
+                        
                         edge_index[0].append(j)
                         edge_index[1].append(i)
+#                         edge_weight.append([0, 1])
                     
                     #neg_edge_index
                     if (in_im[i][j] == 255) and (out_im[i][j] != 255):
@@ -96,9 +103,10 @@ class RNADataset(Dataset):
             edge_index = torch.tensor(edge_index, dtype=torch.long)
             pos_edge_index = torch.tensor(pos_edge_index, dtype=torch.long)
             neg_edge_index = torch.tensor(neg_edge_index, dtype=torch.long)
+            edge_weight = torch.tensor(edge_weight, dtype=torch.float32)
             
             
-            data = Data(x=x, edge_index=edge_index.contiguous(), adj_mat=adj_mat, 
+            data = Data(x=x, edge_index=edge_index.contiguous(), edge_weight=edge_weight, adj_mat=adj_mat, 
                         pos_edge_index=pos_edge_index, neg_edge_index=neg_edge_index)
 
             if self.pre_filter is not None and not self.pre_filter(data):
