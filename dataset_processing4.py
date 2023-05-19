@@ -15,7 +15,7 @@ class RNADataset(Dataset):
 
     @property
     def raw_file_names(self):
-        return list(map(lambda x: "dataset_1091/in/" + x, os.listdir("./data5/raw/dataset_1091/in")))
+        return list(map(lambda x: "dataset_1091/in/" + x, os.listdir("./data4/raw/dataset_1091/in")))
 
     @property
     def processed_file_names(self):
@@ -55,71 +55,71 @@ class RNADataset(Dataset):
                         # AU
                         if (n1 == 32 and n2 == 128) or (n1 == 128 and n2 == 32):
                             if in_im[i][j] == 255:
-                                x.append([1, 0, 0, 1, 0, [i, j]]) 
+                                x.append([1, 0, 0, 0, 0, 0, 1, 0, [i, j]]) 
                             else:
-                                x.append([1, 0, 0, 0, 1, [i, j]]) 
+                                x.append([1, 0, 0, 0, 0, 0, 0, 1, [i, j]]) 
 
                             if out_im[i][j] == 255:
                                 y.append(1)
                             else:
                                 y.append(0)
 #                         # UA
-#                         elif n1 == 128 and n2 == 32:
-#                             if in_im[i][j] == 255:
-#                                 x.append([0, 1, 0, 0, 0, 0, 1, 0, [i, j]]) 
-#                             else:
-#                                 x.append([0, 1, 0, 0, 0, 0, 0, 1, [i, j]]) 
+                        elif n1 == 128 and n2 == 32:
+                            if in_im[i][j] == 255:
+                                x.append([0, 1, 0, 0, 0, 0, 1, 0, [i, j]]) 
+                            else:
+                                x.append([0, 1, 0, 0, 0, 0, 0, 1, [i, j]]) 
 
-#                             if out_im[i][j] == 255:
-#                                 y.append(1)
-#                             else:
-#                                 y.append(0)
+                            if out_im[i][j] == 255:
+                                y.append(1)
+                            else:
+                                y.append(0)
                         # CG
                         elif (n1 == 64 and n2 == 96) or (n1 == 96 and n2 == 64):
                             if in_im[i][j] == 255:
-                                x.append([0, 1, 0, 1, 0, [i, j]]) 
+                                x.append([0, 0, 1, 0, 0, 0, 1, 0, [i, j]]) 
                             else:
-                                x.append([0, 1, 0, 0, 1, [i, j]]) 
+                                x.append([0, 0, 1, 0, 0, 0, 0, 1, [i, j]]) 
 
                             if out_im[i][j] == 255:
                                 y.append(1)
                             else:
                                 y.append(0)
 #                         # GC
-#                         elif n1 == 96 and n2 == 64:
-#                             if in_im[i][j] == 255:
-#                                 x.append([0, 0, 0, 1, 0, 0, 1, 0, [i, j]]) 
-#                             else:
-#                                 x.append([0, 0, 0, 1, 0, 0, 0, 1, [i, j]]) 
+                        elif n1 == 96 and n2 == 64:
+                            if in_im[i][j] == 255:
+                                x.append([0, 0, 0, 1, 0, 0, 1, 0, [i, j]]) 
+                            else:
+                                x.append([0, 0, 0, 1, 0, 0, 0, 1, [i, j]]) 
 
-#                             if out_im[i][j] == 255:
-#                                 y.append(1)
-#                             else:
-#                                 y.append(0)
+                            if out_im[i][j] == 255:
+                                y.append(1)
+                            else:
+                                y.append(0)
                         # UG
                         elif (n1 == 128 and n2 == 96) or (n1 == 96 and n2 == 128):
                             if in_im[i][j] == 255:
-                                x.append([0, 0, 1, 1, 0, [i, j]]) 
+                                x.append([0, 0, 0, 0, 1, 0, 1, 0, [i, j]]) 
                             else:
-                                x.append([0, 0, 1, 0, 1, [i, j]]) 
+                                x.append([0, 0, 0, 0, 1, 0, 0, 1, [i, j]]) 
 
                             if out_im[i][j] == 255:
                                 y.append(1)
                             else:
                                 y.append(0)
                         # GU
-#                         elif n1 == 96 and n2 == 128:
-#                             if in_im[i][j] == 255:
-#                                 x.append([0, 0, 0, 0, 0, 1, 1, 0, [i, j]]) 
-#                             else:
-#                                 x.append([0, 0, 0, 0, 0, 1, 0, 1, [i, j]]) 
+                        elif n1 == 96 and n2 == 128:
+                            if in_im[i][j] == 255:
+                                x.append([0, 0, 0, 0, 0, 1, 1, 0, [i, j]]) 
+                            else:
+                                x.append([0, 0, 0, 0, 0, 1, 0, 1, [i, j]]) 
 
-#                             if out_im[i][j] == 255:
-#                                 y.append(1)
-#                             else:
-#                                 y.append(0)
+                            if out_im[i][j] == 255:
+                                y.append(1)
+                            else:
+                                y.append(0)
                     if j - i == 1:
-                        x.append([0, 0, 0, 0, 0, [i, j]])
+                        x.append([0, 0, 0, 0, 0, 0, 0, 0, [i, j]])
                         y.append(-1)
                  
             #edge_index
@@ -136,8 +136,9 @@ class RNADataset(Dataset):
             x = torch.tensor(x, dtype=torch.float32)
             edge_index = torch.tensor(edge_index, dtype=torch.long)
             y = torch.tensor(y, dtype=torch.float32)
+            s = torch.tensor(size, dtype=torch.int32)
             
-            data = Data(x=x, edge_index=edge_index.contiguous(), y=y, adj_mat=adj_mat, 
+            data = Data(x=x, edge_index=edge_index.contiguous(), y=y, s=s, 
                         # pos_edge_index=pos_edge_index, neg_edge_index=neg_edge_index
                         )
 
@@ -157,5 +158,5 @@ class RNADataset(Dataset):
         return data
 
 
-dataset = dataset = RNADataset(root="./data5/")
+dataset = dataset = RNADataset(root="./data4/")
 
